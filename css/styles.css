@@ -1,0 +1,164 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+    background: #ffbe76;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    display: block;
+    height: 20px;
+    width: auto;
+    border: 1px solid #000;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: #686de0;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 7px;
+    color: white;
+}
+
+.correct-dot{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    background-color: #6ab04c;
+    padding-top: 7px;
+    color: black;
+}
+
+.incorrect-dot{    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    background-color: #eb4d4b;
+    padding-top: 7px;
+    color: white;
+}
+
+.fake-dot {
+    height: 50px;
+    width: 50px;
+}
+
+#home{
+    height: 24px;
+}
+
+.home {
+    background-attachment: scroll, fixed;
+    background-color: #ffbe76;
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    padding: 16em 0;
+    position: relative;
+    text-align: center;
+    height:100vh;
+}
+.inner {
+    position: relative;
+    z-index: 2;
+}
+
+main {
+    background-color: #f6e58d;
+}
+
+meter {
+    /* Reset the default appearance */
+    -moz-appearance: none;
+    appearance: none;
+  
+    width: 50%;
+    height: 30px;
+    
+    /* For Firefox */
+    background: #c7ecee;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
+    border-radius: 3px;
+}
+
+/* WebKit */
+meter::-webkit-meter-bar {
+    background: #c7ecee;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
+    border-radius: 3px;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: #6ab04c;
+    border-radius: 3px;
+}
+
+meter::-webkit-meter-suboptimum-value {
+    background: #fffa65;
+    border-radius: 3px;
+}
+
+meter::-webkit-meter-even-less-good-value {
+    background: #eb4d4b;
+    border-radius: 3px;
+}
+
+  /* Firefox */
+meter::-moz-meter-bar {
+    border-radius: 3px;
+}
+  
+meter:-moz-meter-optimum::-moz-meter-bar {
+    background: #6ab04c;
+}
+  
+meter:-moz-meter-sub-optimum::-moz-meter-bar {
+    background: #fffa65;
+}
+  
+meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    background: #eb4d4b;
+}
